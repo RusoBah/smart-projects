@@ -1,0 +1,77 @@
+/* Блок с нашеми примуществами */
+
+.content-benefit-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  min-height: 20vh; 
+  
+  position: relative;
+}
+
+/* Стили для блоков */
+.block {
+  
+  width: 100%;
+  max-width: 680px;
+  height: 202px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 42px;
+  transition: transform 0.5s ease;
+}
+
+
+.block-white {
+  position: absolute;
+  text-align: left;
+  background-color: #fff;
+  z-index: 1;
+}
+
+
+.block-blue {
+  position: relative;
+  background-color: #2400e9;
+  background-size: cover;
+  color: #fff;
+  font-size: 18px;
+  z-index: 2;
+}
+
+/* Контент внутри блоков */
+
+.benefit-element {
+  width: 80%;
+  text-align: center;
+}
+
+.block-white .benefit-element{
+  text-align: left;
+}
+
+.block-white p {
+  font-size: 14px;
+  color: #333;
+}
+.block-white h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.block-blue h2 {
+  font-size: 18px;
+}
+
+/* Классы для анимации разъезжания */
+.block-white.slide-left {
+  transform: translateX(-50%); /* Белый уезжает влево */
+}
+
+.block-blue.slide-right {
+  transform: translateX(48%); /* Синий уезжает вправо */
+}
+

@@ -1,0 +1,73 @@
+/* Блок о нас*/
+.content-about{
+  background-color: #1c1d25;
+  border-radius: 63px;
+  color: #fff;
+}
+
+.content-about-block{
+  padding: 100px 30px;
+}
+
+.content-about-title{
+  width: 80%;
+}
+
+.content-about-title h2{
+  text-transform: uppercase;
+  font-size: .75rem;
+}
+
+.content-about-title p{
+  margin: 15px 0;
+  font-size: 2rem;
+}
+
+.content-about-list{
+  margin: 260px 0 20px 0;
+}
+
+.about-list-item{
+  text-align: center;
+  margin: 20px 5px;
+}
+
+.about-list-item h2{
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.about-list-item p{
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.content-about-dekor{
+  margin: 260px 0 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.about-dekor-text{
+  width: 10%;
+}
+
+.about-dekor-line{
+  width: 90%;
+  height: .5px;
+  border-radius: 10px;
+  background-color: #3f3f3f;
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.content-about-list-img{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 50px 0;
+}
+.content-about-list-img img{
+  height: 120px;
+  width: 190px;
+}
