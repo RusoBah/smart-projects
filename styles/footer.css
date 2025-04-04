@@ -101,7 +101,9 @@
   text-align: center;
   padding: 10% 0;
 }
-
+.info-list-hide{
+  display: none;
+}
 .footer-communicate img{
   margin: 20px 0;
   height: 80px;

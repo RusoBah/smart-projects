@@ -27,6 +27,13 @@
   margin: 10px;
   cursor: pointer;
   transition: all ease 1s;
+  position: relative;
+}
+
+.service-block-button{
+  display: none;
+  position: absolute;
+  bottom: 20px;
 }
 
 .service-block:nth-child(2):hover,

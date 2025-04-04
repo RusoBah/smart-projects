@@ -1,11 +1,20 @@
+const navBtn = document.querySelector('.nav-button');
+const navMenu = document.querySelector('.nav-menu');
+const infoDisable = document.querySelector('.info-disable');
 
-window.addEventListener('resize', function() {
-  if (window.innerWidth < 1200) {
-    document.body.classList.add('no-animation');
+navBtn.addEventListener('click', function() {
+  navMenu.classList.toggle('active');
+  infoDisable.style.display = 'none';
+  if (navMenu.classList.contains('active')) {
+    navBtn.textContent = 'ЗАКРЫТЬ';
   } else {
-    document.body.classList.remove('no-animation');
+    infoDisable.style.display = 'block';
+    navBtn.textContent = 'МЕНЮ';
   }
-});
+})
+
+
+
 
 window.addEventListener('scroll', function() {
   if (document.body.classList.contains('no-animation')) return;
@@ -19,13 +28,17 @@ window.addEventListener('scroll', function() {
     const blueBlock = wrapper.querySelector('.block-blue');
 
     const wrapperRect = wrapper.getBoundingClientRect();
+    if(window.innerWidth > 1240){
 
-    if (wrapperRect.top <= windowHeight / 2 && wrapperRect.top >= 0) {
-      whiteBlock.classList.add('slide-left');
-      blueBlock.classList.add('slide-right');
-    } else {
-      whiteBlock.classList.remove('slide-left');
-      blueBlock.classList.remove('slide-right');
+      if (wrapperRect.top <= windowHeight / 2 && wrapperRect.top >= 0) {
+        whiteBlock.classList.add('slide-left');
+        blueBlock.classList.add('slide-right');
+      } else {
+        whiteBlock.classList.remove('slide-left');
+        blueBlock.classList.remove('slide-right');
+      }
     }
   });
+  
+
 });

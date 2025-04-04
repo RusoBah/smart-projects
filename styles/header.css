@@ -39,8 +39,8 @@
 }
 
 
-/* Стили для кнопок */
-.nav-button {
+
+.header-contacts .nav-button {
   padding: 10px 20px;
   border: none;
   height: 40px;
@@ -51,6 +51,23 @@
   font-size: 15px
 }
 
+.nav-menu .nav-menu-btn{
+  padding: 10px 20px;
+  margin: 10px 10px;
+  border: none;
+  height: 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: var(--color-white);
+  font-size: 15px
+}
+
+.nav-info{
+  margin: 20px;
+  text-align: left;
+}
+
 .nav-button p{
   transition: transform .55s cubic-bezier(.645, .045, .355, 1), opacity .35s linear .2s;
   
@@ -59,3 +76,49 @@
   
   transform: translateY(0%) rotateX(0deg) scaleX(1) translate3d(0, 0px, 0);
 }
+
+.nav-menu {
+  display: none; 
+  position: fixed;
+  top: 10px; 
+  right: 10px;
+  border-radius: 32px;
+  width: 26%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  transition: all ease 1s; 
+  
+}
+
+.nav-menu.active {
+  display: block;
+  transform: translateY(0); 
+}
+
+
+.nav-list {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+.nav-item {
+  margin: 15px 0;
+  transition: all ease 0.5s;
+}
+
+.nav-link {
+
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-item:hover {
+  transform:translateX(30px);
+}
+
+

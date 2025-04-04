@@ -79,7 +79,7 @@ h3 {
 
 .main{
   width: 100%;
-  max-width: 1400px;
+  /* max-width: 1980px; */
   margin: 0 auto;
 }
 
@@ -87,13 +87,19 @@ h3 {
 /* Медиа - запросы */
 
 /*  (большие экраны) */
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
   .service-block:first-child{
-    width: 38%;
+    width: 100%;
   }
   .service-block{
-    width: 26%;
+    width: 48%;
+    height: 350px;
   }
+
+  .service-block-button{
+    display: block;
+  }
+
   .service-block-title{
     font-size: 20px; 
   }
@@ -106,14 +112,20 @@ h3 {
     display: none;
   }
 
+
+  .block{
+    max-width: 100%;
+
+  }
   
 
   .block-white {
-    position: absolute;
+    position:static;
     text-align: left;
     background-color: #292929;
     z-index: 1;
-    margin: 50px auto;
+    width: 100%;
+    margin: 0 10px;
   }
   .block-white h3,
   .block-white p{
@@ -122,52 +134,395 @@ h3 {
   }
 }
 
-/* Стили для экранов шириной до 992px (планшеты) */
-@media (max-width: 992px) {
-  .header {
-    font-size: 20px;
-    text-align: center;
+@media (max-width: 1020px) {
+  .service-block{
+    width: 47%;
   }
 
-  .navigation {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  .content-projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+
+  .projects-list-item{
+    width: 46%;
+    margin: 15px 5px;
+  }
+
+  .form-block{
+    width: 35%;
+  }
+
+  .article-content{
+    max-width: 40%;
+  }
+
+  .footer-communicate{
+    padding: 15% 0;
+  }
+  .footer-communicate img{
+    height: 60px;
+    width: 60px;
+  }
+  .content-about-list-img img {
+    height: 63px;
+    width: 109px;
+  }
+  .info-list-clone{
+    display: none;
+  }
+  .info-list-hide{
+    display: block;
+    width: 100%;
+    margin: 0 10px;
+  }
+}
+
+/* Стили для экранов шириной до 992px (планшеты) */
+@media (max-width: 992px) {
+  
+  .nav-menu{
+    width: 320px;
+  }
+  
+  .service-block{
+    width: 47%;
+  }
+
+  .content-projects-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+
+  .projects-list-item{
+    width: 46%;
+    margin: 15px 5px;
+  }
+
+  .form-block{
+    width: 35%;
+  }
+
+  .article-content{
+    max-width: 40%;
+  }
+
+  .footer-communicate{
+    padding: 15% 0;
+  }
+  .footer-communicate img{
+    height: 60px;
+    width: 60px;
+  }
+  .content-about-list-img img {
+    height: 63px;
+    width: 109px;
+  }
+  .info-list-clone{
+    display: none;
+  }
+  .info-list-hide{
+    display: block;
+    width: 100%;
+    margin: 0 10px;
   }
 }
 
 /* Стили для экранов шириной до 768px (маленькие планшеты и большие телефоны) */
 @media (max-width: 768px) {
-  .sidebar {
-    display: none; /* Скрываем боковую панель */
+
+  .main{
+    width: 100%;
   }
 
-  .main-content {
-    font-size: 18px;
-    padding: 10px;
+  .header-logo-img{
+    max-height: 60%;
+    max-width: 60%;
+  }
+
+  .contacts-info{
+    text-align: center;
+    margin-right: 1rem;
+  }
+
+  .header-contacts .nav-button{
+    font-size: 14px
+  }
+
+  .header-contacts{
+    gap:0;
+
+  }
+  .info-phone{
+    font-size: 14px
+  }
+  .info-email{
+    font-size: .65em;
+  }
+
+  .service-block{
+    width: 100%;
+    height: 240px;
+  }
+
+  .content-about-title p{
+    margin: 15px 0;
+    font-size: 1.5rem;
+  }
+
+  .content-about-list{
+    margin: 180px 0 20px 0;
+  }
+
+  .about-list-item h2 {
+    font-size: 2rem;
+  }
+
+  .content-about-dekor {
+    margin: 180px 0 0 0;
+    display: flex;
+    align-items: center;
+  }
+  .about-dekor-text {
+    width: 18%;
+  }
+  .content-about-list-img img {
+    height: 63px;
+    width: 109px;
+  }
+
+  .form-block{
+    width: 38%;
+
+  }
+  .form{
+    width: 100%;
+  }
+  .form-button{
+    padding: 15px 25px;
+  }
+  .form-block-number{
+   text-wrap: nowrap;
+  }
+  .article-content {
+    max-width: 90%;
+  }
+ 
+  .info-list-clone{
+    display: none;
+  }
+  .info-list-hide{
+    display: block;
+    width: 100%;
+    margin: 0 10px;
+  }
+  .info-button{
+    padding: 15px 25px;
+  }
+  .contact-info-item{
+    font-size: 16px
+
   }
 }
 
 /* Стили для экранов шириной до 576px (мобильные телефоны) */
 @media (max-width: 576px) {
   .header {
-    font-size: 16px;
-    padding: 10px;
-    background-color: #f4f4f4; /* Добавляем фон для мобильной версии */
+    padding: 0;
+    
+  }
+  .contacts-info{
+    display: none;
+  }
+  
+  .about-dekor-text {
+    width: 22%;
+  }
+  .content-about-list-img img {
+    height: 35px;
+    width: 80px;
+  }
+  .projects-list-item {
+    width: 100%;
+    margin: 15px 5px;
+  }
+  .content-form-title {
+    width: 100%;
+  }
+  .form-block {
+    width: 80%;
+    margin: 10px 0;
+  }
+  .form-block h3{
+    font-size: 14px;
+  }
+  .form-block-name::after{
+    display: none;
+  }
+  .form-button::after{
+    display: block;
   }
 
-  .navigation {
-    display: none; /* Прячем навигацию, если она не нужна */
+  .footer-contact-info{
+    padding: 40px 20px 30px 30px;
   }
 
-  .burger-menu {
-    display: block; /* Показываем бургер-меню */
-    cursor: pointer;
-    font-size: 24px;
+  .contact-info-title h2 {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .info-button{
+    margin: 12px 0;
+    font-size: 12px;
+    padding: 15px 10px;
+  }
+  .footer-communicate img{
+    height: 40px;
+    width: 40px;
+  }
+  .footer-communicate {
+    padding: 10% 10px; 
+  }
+  .contact-info-list{
+    gap: 4%;
+
+  }
+}
+
+/**************************/
+
+
+
+@media (max-width: 425px) {
+  
+  .header{
+    top: 5px;
+    right: 5px;
+  }
+
+  .hover-image{
+    opacity: 1;
+  }
+
+  .image{
+    display: none;
+  }
+
+  .header-contacts{
+    padding: 0;
+  }
+
+  .header-logo-img{
+    max-height: 50%;
+    max-width: 50%;
+
+  }
+
+  .service-block-img{
+    display: none;
+  }
+
+  .content-about-title p{
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .content-about-dekor{
+    flex-wrap: wrap;
+  }
+    
+  .about-dekor-text{
+    width: 100%;
+    margin: 10px auto;
     text-align: center;
-    margin-top: -10px;
-    color:#333
-}
-}
+  }
 
+  .about-dekor-line{
+    width: 100%;
+  }  
 
+  .content-benefit-title{
+    padding: 10% 5% 90px 20px;
+  }
+    
+  .content-projects-title h2,
+  .content-benefit-title h2{
+    text-transform: uppercase;
+    font-size: .85rem;
+    font-weight: 400;
+  }
+
+  .content-projects-title p,
+  .content-benefit-title p{
+    margin: 15px 0;
+    font-size: 1.5rem;
+  }
+
+  .content-form {
+    height: 510px;
+    padding: 15px 0;
+  }
+
+  .form-block{
+    width: 100%;
+  }
+
+  .form-button{
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .form-button::after{
+    left: 10px;
+    right: 10px;
+    width: 280px; 
+    bottom: 10px;
+  }
+
+  .block-white p {
+    line-height: 1.5rem;
+  }
+
+  .block{
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .content-benefit-title p {
+    margin: 15px 0;
+    font-size: 1.5rem;
+  }
+
+  .content-offer-title h2{
+    font-weight: 300;
+    line-height: 2em;
+    font-size: 16px;
+  }
+
+  .content-offer-list li{
+    line-height: 1.5rem;
+  }
+
+  .offer-button{
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 12px;
+  }
+  
+  .footer-communicate img{
+    height: 40px;
+    width: 40px;
+  }
+
+  .footer-communicate{
+    width: 100%;
+  }
+  
+  .footer-contact-info{
+    width: 100%;
+  }
+}
