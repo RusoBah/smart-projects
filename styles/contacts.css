@@ -1,0 +1,164 @@
+@import url("style.css");
+
+.main{
+  background: #000;
+}
+
+.content{
+  margin: 15vh 0px 0px;
+}
+
+.content-title{
+  
+  position: relative;
+  z-index: 2;
+  background-image: linear-gradient(0turn, rgba(36, 0, 233, 1) 0%, rgb(21, 59, 172) 100%);
+  border-radius: 42px;
+  height: 300px;
+  border-color: transparent;
+  border-style: solid;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
+.nav-menu{
+  z-index: 5;
+}
+
+
+.content-title-header{
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  width: 100%;
+  margin: 10px 25px;
+  gap: 10px;
+
+}
+
+.content-title-header a{
+  color:#fff;
+}
+
+.title-block-left{
+  z-index: 2;
+  padding: 10px 30px;
+}
+
+.text-block-left{
+  border-right: #000000 solid 1px;
+
+}
+
+.text-block-right p{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.text-block-left p{
+  text-transform: uppercase;
+  font-size: .85rem;
+  font-weight: 400;
+}
+
+.title-block-left h2{
+  margin: 0 0 30px 0;
+  font-size: 36px;
+}
+
+.title-block-left p{
+  margin: 0 0 60px 0;
+  line-height: .8cm;
+}
+
+.title-block-right,
+.title-block-left{
+  width: 50%;
+  font-weight: 400;
+}
+.title-block- h2,
+.title-block-left h2{
+  font-weight: 400;
+}
+
+.title-block-right{
+  padding: 0 0 0 80px;
+}
+
+.title-block-right div{
+  margin: 90px 0;
+}
+
+.title-block-right div p{
+  font-size: 12px;
+}
+
+/***********************/
+
+.contacts-block{
+  background: #fff;
+  border-radius: 42px;
+  margin: 10px;
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts-block h2{
+  font-weight: 300;
+  width: 290px;
+  padding: 30px 20px;
+  
+}
+.content-contacts{
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.block-wrapper{
+  width: 60%;
+}
+.contacts-list{
+  display: flex;
+
+  
+  gap: 50px;
+}
+
+.contacts-item{
+  height: 100%;
+  margin: 10px 20px;
+}
+
+.contacts-item h3{
+  font-size: 14px;
+  padding-bottom: 10px;
+  
+}
+
+.contacts-item p{
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+.contacts-map{
+  height: 260px;
+  width: 600px;
+  border-radius: 42px;
+  overflow: hidden;
+}
+#map{
+  height: 100%;
+  width: 100%;
+}
+#map-spb{
+  height: 100%;
+  width: 100%;
+
+}
