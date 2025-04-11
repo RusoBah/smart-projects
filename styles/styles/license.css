@@ -1,0 +1,132 @@
+@import url("style.css");
+
+.main{
+  background: #000;
+}
+
+.content{
+  margin: 15vh 0px 0px;
+}
+
+.content-title{
+  background: linear-gradient(0turn, rgba(36, 0, 233, 1) 0%, rgb(21, 59, 172) 100%);
+  border-radius: 42px;
+  height: 450px;
+  border-color: transparent;
+  border-style: solid;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
+.content-text{
+  background: #fff;
+  color: #000;
+}
+
+.content-title-header{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  gap: 10px;
+}
+
+.content-title-header a{
+  color:#fff;
+}
+
+.title-block-left{
+  border: none;
+  padding: 10px 30px;
+}
+
+.text-block-left{
+  border-right: #000000 solid 1px;
+
+}
+
+
+.text-block-left p{
+  text-transform: uppercase;
+  font-size: .85rem;
+  font-weight: 400;
+}
+
+.title-block-left h2{
+  margin: 0 0 60px 0;
+  font-size: 36px;
+}
+
+.title-block-left p{
+  margin: 0 0 60px 0;
+  line-height: .8cm;
+}
+
+.title-block-right,
+.title-block-left{
+  width: 50%;
+  font-weight: 400;
+}
+.title-block- h2,
+.title-block-left h2{
+  font-weight: 400;
+}
+
+.title-block-right{
+  padding: 0 0 0 190px;
+}
+
+.title-block-right div{
+  margin: 90px 0;
+}
+
+.title-block-right div p{
+  font-size: 12px;
+}
+
+/***********************/
+
+.content-our-services{
+  background: #000;
+
+}
+
+.articles-container{
+  padding: 0;
+}
+
+.our-services-content{
+  padding: 20px 25px;
+  width: 45%;
+  height: 250px;
+  font-weight: 400;
+  margin: 8px;
+  position: relative;
+}
+
+.our-services-btn{
+  background-color: #2400e9;
+  color: #fff;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.our-services-content h3{
+  padding-bottom: 25px;
+}
+.our-services-content p{
+  padding-bottom: 15px;
+  font-size: 12px;
+
+}
+.our-services-content li{
+  padding-bottom: 15px;
+  font-size: 12px;
+
+}

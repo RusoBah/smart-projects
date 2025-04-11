@@ -1,0 +1,57 @@
+/*Блок с контентом*/
+.content{
+  background-color: #000;
+  width: 100%;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  margin: 35vh 0 0 0;
+}
+.content-service{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.service-block:first-child{
+  background-color: var(--color-white);
+  width: 40%;
+  color: #000;
+  
+}
+
+.service-block{
+  background-color: var(--primary-color);
+  width: 27.5%;
+  color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all ease 1s;
+  position: relative;
+}
+
+.service-block-button{
+  display: none;
+  position: absolute;
+  bottom: 20px;
+}
+
+.service-block:nth-child(2):hover,
+.service-block:nth-child(3):hover{
+  transform: scale(0.989);
+}
+
+.service-block:last-child{
+  background-color: var(--secondary-color);
+}
+
+.service-block-title{
+  margin: 0 0 25px 0;
+  font-weight: 500;
+}
+
+.service-block-img{
+  height: 40px;
+  width: 40px;
+  margin: 15% 0 0 0;
+}

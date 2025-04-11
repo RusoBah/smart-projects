@@ -2,7 +2,7 @@
 @import url("base-style.css");
 
 /* Стили для компонентов*/
-@import url("header.css"); 
+@import url("header.css");
 @import url("content.css");
 @import url("content-about.css");
 @import url("content-projects.css");
@@ -30,7 +30,6 @@ h1 {
   font-size: 36px;
 }
 
-
 h2 {
   font-size: 28px;
 }
@@ -41,13 +40,6 @@ h3 {
 
 .no-animation {
   animation: none !important;
-}
-
-.title{
-  color: #000;
-  margin: 80px 0px 0 30px;
-  text-wrap: wrap;
-  line-height: 4rem;
 }
 
 /* Стили для видео */
@@ -77,31 +69,25 @@ h3 {
 
 
 
-
-
+/* Пример стиля для Flexbox */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 
 .main{
   width: 100%;
-  max-width: 1480px;
+  /* max-width: 1980px; */
   margin: 0 auto;
-  
 }
 
-body{
-
-  background: #000;
-}
 
 /* Медиа - запросы */
 
 /*  (большие экраны) */
 @media (max-width: 1240px) {
-
-  .header-logo-img{
-    height: auto;
-    max-width: 50px;
-  }
-
   .service-block:first-child{
     width: 100%;
   }
@@ -148,16 +134,7 @@ body{
   }
 }
 
-@media (max-width: 1045px) {
-  
-  .header .nav-button{
-    display: block;
-  }
-
-  .nav-list-header{
-    display: none;
-  }
-
+@media (max-width: 1020px) {
   .service-block{
     width: 47%;
   }
@@ -263,7 +240,8 @@ body{
   }
 
   .header-logo-img{
-    max-width: 40px;
+    max-height: 60%;
+    max-width: 60%;
   }
 
   .contacts-info{
@@ -421,10 +399,6 @@ body{
 
 @media (max-width: 425px) {
   
-  .header-logo-img{
-    max-width: 40px;
-  }
-
   .header{
     top: 5px;
     right: 5px;

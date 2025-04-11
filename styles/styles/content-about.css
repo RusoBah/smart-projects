@@ -23,10 +23,8 @@
   font-size: 2rem;
 }
 
-.content-about-block .content-about-list{
+.content-about-list{
   margin: 260px 0 20px 0;
-  display: flex;
-  justify-content: space-around;
 }
 
 .about-list-item{

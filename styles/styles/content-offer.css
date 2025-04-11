@@ -1,0 +1,44 @@
+
+/*Блок с предложением */
+
+.content-offer{
+  margin: 10px;
+  background-color: #2400E9;
+  background-image: url(/img/untitled_2.png);
+  
+  background-size: cover;
+  background-position: right;
+  max-height: 342px;
+  border-radius: 23px;
+  color: var(--color-white);
+  padding: 20px 15px;
+  
+}
+
+.content-offer-title{
+  margin: 10px;
+}
+.content-offer-title h2{
+  font-weight: 300;
+  line-height: 2em;
+  font-size: 22px;
+}
+.content-offer-title span{
+  background-color: #fff;
+  border-radius: 24px;
+  color: rgb(36, 0, 233);
+  padding: 5px 10px;
+}
+
+.content-offer-list{
+  margin: 20px;
+}
+.content-offer-list li{
+  padding: 5px;
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+.offer-button{
+  margin: 40px 0;
+}
